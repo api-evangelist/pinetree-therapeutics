@@ -1,7 +1,15 @@
 aid: pinetree-therapeutics
 name: PineTree Therapeutics
-description: 'PineTree Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Pinetree Therapeutics, Inc. is a preclinical-stage biotechnology company headquartered
+  at West Cambridge Scientific Park, 767C Concord Ave, Cambridge, Massachusetts, developing
+  next-generation targeted protein degraders (TPDs) built on its proprietary AbReptor platform. AbReptor
+  degrades membrane-bound and extracellular proteins through target co-engagement, induced endocytosis,
+  endolysosome formation and lysosomal degradation, aiming to overcome drug resistance and tumor
+  recurrence in oncology, with additional application in inflammation and immunology. The company is
+  advancing trispecific degraders and ADC-integrated programs, closed a $17M Series A in July 2024, and
+  has entered a licensing partnership with AstraZeneca. It is a therapeutics developer rather than a
+  software vendor: it publishes no public API, developer portal, SDK or machine-readable specification.'
+image: https://www.pinetreetx.com/images/common/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/pinetree-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +20,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Oncology
+- Drug Discovery
+- Targeted Protein Degradation
+- Preclinical
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +34,50 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pinetree-therapeutics-domain-security.yml
 - type: Website
+  url: https://www.pinetreetx.com/
+- type: News
+  url: https://www.pinetreetx.com/en/news/news.php
+- type: Team
+  url: https://www.pinetreetx.com/en/team/leadership.php
+- type: Careers
+  url: https://www.pinetreetx.com/en/careers/job.php
+- type: Investors
+  url: https://www.pinetreetx.com/en/investors/investors.php
+- type: Contact
+  url: https://www.pinetreetx.com/en/communication/contact.php
+- type: SecondaryMarket
   url: https://forgeglobal.com/pinetree-therapeutics_stock/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/pinetree-therapeutics
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Pinetree Therapeutics is a preclinical-stage oncology drug developer whose product is a
+    protein-degrader therapeutic, not software — its entire public site is seven brochure pages
+    (team, science, news, careers, investors, contact) served from PHP with no /developers, /api,
+    api./docs./developer. subdomain, sitemap, llms.txt or any /.well-known/ document.
+  evidence:
+    - url: https://www.pinetreetx.com/
+      status: 200
+    - url: https://www.pinetreetx.com/developers
+      status: 404
+    - url: https://www.pinetreetx.com/api
+      status: 404
+    - url: https://www.pinetreetx.com/openapi.json
+      status: 404
+    - url: https://www.pinetreetx.com/llms.txt
+      status: 404
+    - url: https://www.pinetreetx.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.pinetreetx.com/.well-known/security.txt
+      status: 404
+  checked: '2026-08-05'
