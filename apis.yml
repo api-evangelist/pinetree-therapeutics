@@ -9,6 +9,17 @@ description: 'Pinetree Therapeutics, Inc. is a preclinical-stage biotechnology c
   advancing trispecific degraders and ADC-integrated programs, closed a $17M Series A in July 2024, and
   has entered a licensing partnership with AstraZeneca. It is a therapeutics developer rather than a
   software vendor: it publishes no public API, developer portal, SDK or machine-readable specification.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.pinetreetx.com/images/common/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/pinetree-therapeutics/refs/heads/main/apis.yml
 x-type: company
